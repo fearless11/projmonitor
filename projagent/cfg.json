@@ -1,0 +1,47 @@
+{
+    "debug": false,
+    "hostname": "hostname",
+    "v1dir":"/usr/local/java",
+    "v4dir":"/usr/local/release",
+    "worker": 100,
+    "gointerval":1,
+    "checkinterval":60,  
+    "allocatemem":4000,
+    "execrestart":true,
+    "jvm":{
+         "enable":false,
+         "interval":60,
+         "ygc": 99999,
+         "ygct": 3,
+         "fgc":99999,
+         "fgct": 3,
+         "ratiogct":0.9999,
+         "sizeygcoc":9999999,
+         "avgsizeygcoc": 9999999,
+         "sizeoldou": 9999999,
+         "ratiooldou": 0.9999,
+         "sizeallheap": 2048000,
+         "sizeuseheap": 9999999
+    },
+    "web": {
+        "addrs": ["10.10.10.110:1990"],
+        "interval": 300,
+        "timeout": 1000
+    },
+    "alarm":{
+        "enable": false,
+        "cpu":500,
+        "mem":200,
+        "outfilesize":500,
+        "outfilechange":10,
+        "alarmurl": "http://alert.we.com/api/v1/alerts"
+    },
+    "influxdb":{
+        "enable":false,
+        "addr":"http://127.0.0.1:8086",
+        "database": "javatest"
+    },
+    "elastic":{
+        "enable":false
+    }
+}

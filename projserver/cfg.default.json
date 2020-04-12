@@ -1,0 +1,21 @@
+{
+    "debug": true,
+    "rpc": {
+        "listen": "0.0.0.0:1990"
+    },
+    "mysql": {
+        "addr": "root:root@tcp(192.168.1.60:3306)/project_monitor?charset=utf8&&loc=Asia%2FShanghai",
+        "interval": 5,
+        "idle": 10,
+        "max": 20
+    },
+    "alarm":{
+        "enable": false,
+        "alarmurl": "http://alarm.we.com/api/v1/alerts"
+    },
+    "pull":{
+        "enable": true,
+        "pullurl":"http://192.168.3.73:1992/"
+     },
+     "web":"192.168.3.73:8080"
+}
