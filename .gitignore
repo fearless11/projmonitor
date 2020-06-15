@@ -2,3 +2,4 @@ projagent/log/
 projagent/logs/
 projserver/log/
 projagent/tmp/
+.DS_Store
