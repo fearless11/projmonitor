@@ -1,6 +1,6 @@
 ### 功能
 
-    监控Java服务的CPU、内存、OUT文件、JVM信息。
+    监控Java服务的CPU、内存、OUT文件、JVM信息。
 
 #### projserver
 
