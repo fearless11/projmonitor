@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"gitee.com/feareless11/projmonitor/projserver/alarm"
-	"gitee.com/feareless11/projmonitor/projserver/conf"
-	"gitee.com/feareless11/projmonitor/projserver/model"
+	"projmonitor/projserver/alarm"
+	"projmonitor/projserver/conf"
+	"projmonitor/projserver/model"
 )
 
 type PullProject struct {

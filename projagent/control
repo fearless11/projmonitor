@@ -17,7 +17,7 @@ function check_configure(){
     sed -i "/hostname/c \    \"hostname\":\"$hostname\"," $WORKSPACE/cfg.json
     grep alert.we.com /etc/hosts &> /dev/null || (/bin/cp /etc/hosts /home/ && echo "10.10.10.142 alert.we.com" >> /etc/hosts)
     # 设置开机启动
-    grep checkprojagent.sh /var/spool/cron/root &> /dev/null || (cp /var/spool/cron/root /home && echo "* * * * * sh /data/to8to/tools/projagent/checkprojagent.sh &>/dev/null" >> /var/spool/cron/root )
+    grep checkprojagent.sh /var/spool/cron/root &> /dev/null || (cp /var/spool/cron/root /home && echo "* * * * * sh /data/to8to/tools/projmonitor/projagent/checkprojagent.sh &>/dev/null" >> /var/spool/cron/root )
 }
 
 function check_pid() {

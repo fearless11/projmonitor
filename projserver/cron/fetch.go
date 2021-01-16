@@ -4,8 +4,8 @@ import (
 	"log"
 	"time"
 
-	"gitee.com/feareless11/projmonitor/projserver/conf"
-	"gitee.com/feareless11/projmonitor/projserver/model"
+	"projmonitor/projserver/conf"
+	"projmonitor/projserver/model"
 )
 
 //GetProjectItem Get project information every 5 minutes from database

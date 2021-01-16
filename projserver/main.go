@@ -9,11 +9,11 @@ import (
 	"os"
 	"runtime"
 
-	"gitee.com/feareless11/projmonitor/projserver/api"
-	"gitee.com/feareless11/projmonitor/projserver/conf"
-	"gitee.com/feareless11/projmonitor/projserver/cron"
-	"gitee.com/feareless11/projmonitor/projserver/model"
-	"gitee.com/feareless11/projmonitor/projserver/phttp"
+	"projmonitor/projserver/api"
+	"projmonitor/projserver/conf"
+	"projmonitor/projserver/cron"
+	"projmonitor/projserver/model"
+	"projmonitor/projserver/phttp"
 )
 
 func prepare() {

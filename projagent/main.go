@@ -10,9 +10,10 @@ import (
 
 	_ "net/http/pprof"
 
-	"gitee.com/feareless11/projmonitor/projagent/backend"
-	"gitee.com/feareless11/projmonitor/projagent/conf"
-	"gitee.com/feareless11/projmonitor/projagent/cron"
+	"projmonitor/projagent/backend"
+	"projmonitor/projagent/conf"
+	"projmonitor/projagent/cron"
+
 	"github.com/elastic/beats/libbeat/beat"
 )
 

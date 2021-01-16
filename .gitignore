@@ -1,5 +1,5 @@
-projagent/log/
-projagent/logs/
-projserver/log/
-projagent/tmp/
 .DS_Store
+projmonitor/projagent/log/
+projmonitor/projagent/logs/
+projmonitor/projserver/log/
+projmonitor/projagent/tmp/

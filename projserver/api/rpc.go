@@ -6,7 +6,7 @@ import (
 	"net/rpc"
 	"net/rpc/jsonrpc"
 
-	"gitee.com/feareless11/projmonitor/projserver/conf"
+	"projmonitor/projserver/conf"
 )
 
 type Web int

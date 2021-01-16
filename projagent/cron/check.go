@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"gitee.com/feareless11/projmonitor/projagent/conf"
+	"projmonitor/projagent/conf"
 )
 
 // StartCheck Regular inspection of java project

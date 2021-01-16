@@ -3,7 +3,7 @@ package model
 import (
 	"log"
 
-	"gitee.com/feareless11/projmonitor/projserver/conf"
+	"projmonitor/projserver/conf"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"

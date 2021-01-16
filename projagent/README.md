@@ -29,8 +29,8 @@
 #### 代码调试
 ```
 机器: 10.10.10.147
-目录: /root/go/src/gitee.com/feareless11/projmonitor
-打包分发脚本139: /home/vera.jiang/pack_projagent.sh
+目录: /root/go/src/projmonitor
+打包分发脚本139: /home/vera/pack_projagent.sh
 
 数据库
  select * from project where app_name="t8t-wkf-bpm";
@@ -42,8 +42,8 @@
 	   ansible JAVAIDC -m copy -a 'src=/home/vera.jiang/projagent-idc.tgz dest=/tmp' -k
 	   ansible JAVAIDC -m shell -a 'tar xvf /tmp/projagent-idc.tgz -C /data/to8to/tools/projagent' -k
 
-	   ansible JAVAIDC -m shell -a '/bin/cp /data/to8to/tools/projagent/projagent /data/back' -k
-	   ansible JAVAIDC -m copy -a 'src=/home/vera.jiang/projagent dest=/data/to8to/tools/projagent/projagent' -k
+	   ansible JAVAIDC -m shell -a '/bin/cp /data/to8to/tools/projmonitor/projagent/projagent /data/back' -k
+	   ansible JAVAIDC -m copy -a 'src=/home/vera.jiang/projagent dest=/data/to8to/tools/projmonitor/projagent/projagent' -k
 	2. 确认projagent是在运行
 	   ansible JAVAIDC -m shell -a 'ps aux |grep projagent |grep -v grep 
 	3. kill掉projagent后，监控自动拉起

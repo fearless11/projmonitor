@@ -35,9 +35,9 @@ NUM=`pgrep projagent |wc -l`
 if [[ $NUM > 1 ]]; then killall projagent; killall jstat; fi
 
 
-LOGSIZE=`du -sh /data/to8to/tools/projagent/log/app.log  |grep M |awk -F'M' '{print $1}'`
+LOGSIZE=`du -sh /data/to8to/tools/projmonitor/projagent/log/app.log  |grep M |awk -F'M' '{print $1}'`
 if [[ $LOGSIZE > 500 ]];then
-     echo > /data/to8to/tools/projagent/log/app.log
+     echo > /data/to8to/tools/projmonitor/projagent/log/app.log
 fi
 
 jstatnum=`pgrep -f jstat|wc -l`

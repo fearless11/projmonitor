@@ -145,4 +145,3 @@ elif [ "$1" == "packbin" ]; then
 else
     help
 fi
-

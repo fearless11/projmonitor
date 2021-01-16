@@ -1,6 +1,6 @@
 package api
 
-import "gitee.com/feareless11/projmonitor/projserver/conf"
+import "projmonitor/projserver/conf"
 
 type GetItemResponse struct {
 	Message string

@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"gitee.com/feareless11/projmonitor/projserver/conf"
-	"gitee.com/feareless11/projmonitor/projserver/model"
+	"projmonitor/projserver/conf"
+	"projmonitor/projserver/model"
 )
 
 type AddProj struct{}

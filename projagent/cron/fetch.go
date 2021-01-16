@@ -4,11 +4,11 @@ import (
 	"log"
 	"time"
 
-	"gitee.com/feareless11/projmonitor/projagent/backend"
-	"gitee.com/feareless11/projmonitor/projserver/api"
+	"projmonitor/projagent/backend"
+	"projmonitor/projserver/api"
 
-	"gitee.com/feareless11/projmonitor/projagent/conf"
-	webg "gitee.com/feareless11/projmonitor/projserver/conf"
+	"projmonitor/projagent/conf"
+	webg "projmonitor/projserver/conf"
 )
 
 //GetProjInfo  Get project information every 5 minutes from server

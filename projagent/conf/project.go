@@ -13,8 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"gitee.com/feareless11/projmonitor/projagent/alarm"
-	webg "gitee.com/feareless11/projmonitor/projserver/conf"
+	"projmonitor/projagent/alarm"
+	webg "projmonitor/projserver/conf"
+
 	"github.com/elastic/beats/libbeat/beat"
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/publisher"
@@ -97,7 +98,7 @@ func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 
 func (bt *CheckResult) Run(b *beat.Beat) error {
 	// logp.Info("parsebeat is running! Hit CTRL-C to stop it.")
-	bt.client = b.Publisher.Connect()
+	bt.client, _ = b.Publisher.Connect()
 	for {
 		select {
 		case <-bt.done:
